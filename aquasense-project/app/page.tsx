@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Head from 'next/head';
 import Navbar from './components/navbar';
@@ -14,6 +15,18 @@ export default function Home() {
 
       <Navbar />
       <LandingPage />
+import Image from "next/image";
+import Footer from "./Footer";
+import Team from "./Team";
+export default function Home() {
+  return (
+    <div className="">
+      <main>
+        <Team/>
+        <Footer/>
+       
+      </main>
+      
     </div>
   );
 }

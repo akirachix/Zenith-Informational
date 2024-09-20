@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
     <div  id="home"className="relative h-[calc(100vh-4.5rem)] font-serif">
       <Image
-        src="/images/landingpage.png"
+        src="/images/drainage.png"
         alt="Drainage system"
         layout="fill"
         objectFit="cover"

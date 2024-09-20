@@ -11,7 +11,7 @@ export default function Navbar() {
     <div className="relative font-serif font-bold text-7xl">
       <header className="fixed w-full z-10 bg-white bg-opacity-90 shadow">
         <div className="container max-w-[1800px] mx-auto px-4">
-          <div className="flex justify-start xl:gap-80 items-center h-16">
+          <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="w-45 h-12 relative mr-8 mb-8">
                 <Image
@@ -23,7 +23,7 @@ export default function Navbar() {
               </div>
               <div className="hidden sm:block"></div>
             </div>
-            <nav className="hidden md:flex ml-64 space-x-4 lg:space-x-8 font-semibold text-2xl">
+            <nav className="hidden md:flex  space-x-4 lg:space-x-8 font-semibold text-2xl">
               <NavLink href="#home">Home</NavLink>
               <NavLink href="#product">Product</NavLink>
               <NavLink href="#aboutus">About us</NavLink>

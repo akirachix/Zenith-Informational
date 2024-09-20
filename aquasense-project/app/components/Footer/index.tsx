@@ -24,7 +24,7 @@ const Footer= () =>{
                     <h2 className="font-bold mt-6 md:mt-6 md:ml-4 mt-2">JoinUs</h2>
                     <div className="flex justify-center md:justify-end space-x-3 mt-1">
                         <a href="#">
-                            <img src="/images/twitters.png" alt="Twitter" width={20} height={20} className="mt-1" />
+                            <Image src="/images/twitters.png" alt="Twitter" width={20} height={20} className="mt-1" />
                         </a>
                         <a href="#">
                             <Image src="/images/linkedinnn.png" alt="LinkedIn" width={20} height={20} />

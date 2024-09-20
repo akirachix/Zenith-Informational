@@ -40,7 +40,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="flex justify-center mt-5 md:mt-0 w-full md:w-1/2 ">
-            <img
+            <Image
               src="/images/device.png"
               alt="AquaSense Product"
               className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mb-16"

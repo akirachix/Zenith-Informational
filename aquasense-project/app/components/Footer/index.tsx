@@ -1,4 +1,6 @@
 "use-client"
+import Image from "next/image"
+
 const Footer= () =>{
 
     return(
@@ -25,7 +27,7 @@ const Footer= () =>{
                             <img src="/images/twitters.png" alt="Twitter" width={20} height={20} className="mt-1" />
                         </a>
                         <a href="#">
-                            <img src="/images/linkedinnn.png" alt="LinkedIn" width={20} height={20} />
+                            <Image src="/images/linkedinnn.png" alt="LinkedIn" width={20} height={20} />
                         </a>
                     </div>
                 </section>

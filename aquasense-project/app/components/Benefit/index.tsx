@@ -1,3 +1,4 @@
+import Image from "next/image";
 const Benefit = () => {
   return (
     <div id="product">
@@ -50,9 +51,11 @@ const Benefit = () => {
     
     
     <div className="w-full lg:w-1/2 flex justify-center">
-      <img
+      <Image
         src="/images/aquasense.png"
-        alt="AquaSense logo"
+        alt="aquaSense logo"
+        width={170} 
+        height={48}
         className="w-full h-auto max-w-xs md:max-w-md"
       />
     </div>

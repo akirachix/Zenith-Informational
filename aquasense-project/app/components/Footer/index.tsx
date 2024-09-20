@@ -10,7 +10,7 @@ const Footer= () =>{
             <div className="flex flex-col md:flex-row justify-between items-center">
                 <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
                     <div className="text-center md:text-left">
-                        <img src="/images/aqualogo.png" alt="AquaSense Logo" width={250} height={50} className="mx-auto md:mx-0" />
+                        <Image src="/images/aqualogo.png" alt="AquaSense Logo" width={250} height={50} className="mx-auto md:mx-0" />
                     </div>
                     <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-20 text-center md:text-left font-bold">
                         <a href="#" className="hover:text-gray-300">Support</a>

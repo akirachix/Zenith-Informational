@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, ReactNode } from 'react';
 import Image from 'next/image';
 
 export default function Navbar() {
@@ -65,7 +65,12 @@ export default function Navbar() {
   );
 }
 
-function NavLink({ href, children }) {
+interface NavLinkProps {
+  href: string;
+  children: ReactNode;
+}
+
+function NavLink({ href, children }: NavLinkProps) {
   return (
     <Link href={href} className="text-gray-600 hover:text-blue-500 px-2 py-1 text-2xl font-bold transition duration-150 ease-in-out">
       {children}
@@ -73,7 +78,7 @@ function NavLink({ href, children }) {
   );
 }
 
-function MobileNavLink({ href, children, onClick }) {
+function MobileNavLink({ href, children, onClick }: NavLinkProps & { onClick: () => void }) {
   return (
     <Link href={href} onClick={onClick} className="block px-3 py-4 text-3xl font-bold text-gray-600 hover:text-blue-500">
       {children}

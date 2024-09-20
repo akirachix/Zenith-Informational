@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div  id="aboutus"className="container mx-auto font-serif text-base sm:text-lg md:text-xl lg:text-xl px-4 sm:px-6 lg:px-10">
       <div className="text-center mb-16">
-        <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl font-bold text-teal-700 mt-12 mb-12">
+        <h1 className="text-3xl sm:text-4xl md:text-3xl lg:text-2xl font-bold text-teal-700 mt-12 mb-12">
           About Us
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 mt-10">

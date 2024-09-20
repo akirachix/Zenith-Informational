@@ -1,13 +1,15 @@
+import Image from "next/image";
+
 const AboutUs = () => {
   return (
-    <div className="container mx-auto font-serif text-base sm:text-lg md:text-xl lg:text-2xl px-4 sm:px-6 lg:px-10">
+    <div  id="aboutus"className="container mx-auto font-serif text-base sm:text-lg md:text-xl lg:text-2xl px-4 sm:px-6 lg:px-10">
       <div className="text-center mb-16">
         <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-[70px] font-bold text-teal-700 mt-12 mb-12">
           About Us
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 mt-10">
   <div className="flex justify-center w-full md:w-1/2">
-    <img
+    <Image
       src="/images/saver .png"
       alt="Drainage System"
       className="rounded-[50px] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
@@ -38,7 +40,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="flex justify-center mt-5 md:mt-0 w-full md:w-1/2 ">
-            <img
+            <Image
               src="/images/device.png"
               alt="AquaSense Product"
               className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mb-16"

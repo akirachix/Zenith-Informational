@@ -1,6 +1,7 @@
+import Image from "next/image";
 const Benefit = () => {
   return (
-    <div>
+    <div id="product">
       {/* Benefits Section */}
   <section className="py-8 font-serif">
   <h1 className="text-3xl font-bold text-center w-full text-[#268075] md:text-4xl">
@@ -42,7 +43,7 @@ const Benefit = () => {
     <p className="text-2xl font-bold text-blue-500">
       Scalable Solution:
     </p>
-    Whether you're managing a single drainage point or a complex network, AquaSense is scalable to meet your needs.
+    Whether you are managing a single drainage point or a complex network, AquaSense is scalable to meet your needs.
   </p>
 </div>
 
@@ -50,9 +51,11 @@ const Benefit = () => {
     
     
     <div className="w-full lg:w-1/2 flex justify-center">
-      <img
+      <Image
         src="/images/aquasense.png"
-        alt="AquaSense logo"
+        alt="aquaSense logo"
+        width={170} 
+        height={48}
         className="w-full h-auto max-w-xs md:max-w-md"
       />
     </div>

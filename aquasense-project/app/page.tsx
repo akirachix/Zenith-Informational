@@ -1,10 +1,15 @@
 
-import AquaSenseAbout from "./About Us";
+
 
 import React from 'react';
 import Head from 'next/head';
-import Navbar from './components/navbar';
-import LandingPage from './components/landingpage/page';
+
+import LandingPage from "./components/landingpage/indext";
+import Footer from "./components/Footer";
+import Benefit from "./components/Benefit";
+import Team from "./components/Team";
+import Navbar from "./components/navbar";
+import AboutUs from "./components/About Us";
 
 export default function Home() {
   return (
@@ -17,27 +22,12 @@ export default function Home() {
 
       <Navbar />
       <LandingPage />
-import Image from "next/image";
-import Footer from "./Footer";
-import Team from "./Team";
-import Benefit from "./benefit"
+      <AboutUs></AboutUs>
+      <Benefit/>
+      <Team/>
+      <Footer/>
+ 
+</div>
 
-export default function Home() {
-  return (
-    <div className="">
-      <main>
-        feature/AboutUs
-        
-        <AquaSenseAbout/>
-        
-
-        <Benefit/>
-        <Team/>
-        <Footer/>
-       
-
-      </main>
-      
-    </div>
   );
 }

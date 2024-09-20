@@ -1,4 +1,6 @@
 
+import AquaSenseAbout from "./About Us";
+
 import React from 'react';
 import Head from 'next/head';
 import Navbar from './components/navbar';
@@ -24,10 +26,16 @@ export default function Home() {
   return (
     <div className="">
       <main>
+        feature/AboutUs
+        
+        <AquaSenseAbout/>
+        
+
         <Benefit/>
         <Team/>
         <Footer/>
        
+
       </main>
       
     </div>

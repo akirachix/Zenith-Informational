@@ -2,7 +2,7 @@
 const Footer= () =>{
 
     return(
-    <footer className="text-white text-2xl font-serif">
+    <footer className="text-white text-2xl font-serif mt-24">
       <div className="bg-[#008fff] text-center md:text-right">
         <div className="container mx-auto bg-[#008fff] text-white px-4 md:px-20">
             <div className="flex flex-col md:flex-row justify-between items-center">

@@ -1,6 +1,6 @@
 const Benefit = () => {
   return (
-    <div>
+    <div id="product">
       {/* Benefits Section */}
   <section className="py-8 font-serif">
   <h1 className="text-3xl font-bold text-center w-full text-[#268075] md:text-4xl">

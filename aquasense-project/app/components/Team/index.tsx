@@ -1,6 +1,6 @@
 const Team = () => {
   return (
-      <div className="text-2xl   ">
+      <div id="team" className="text-2xl   ">
         <h1 className="text-[#268075] font-bold text-3xl text-center  font-serif">Team</h1>
   <div className="mb-6 font-serif">
     <div className="flex flex-wrap gap-6 sm:gap-16 md:gap-24 lg:gap-60 xl:gap- justify-center text-center">

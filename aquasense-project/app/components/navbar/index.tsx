@@ -13,9 +13,9 @@ export default function Navbar() {
         <div className="container max-w-[1800px] mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <div className="w-45 h-12 relative mr-8 mb-28">
+              <div className="w-45 h-12 relative mr-8 mb-8">
                 <Image
-                  src="/Logo.png"
+                  src="/images/logo.png"
                   alt="Aquasense Logo"
                   width={170}
                   height={48}
@@ -26,7 +26,7 @@ export default function Navbar() {
             <nav className="hidden md:flex space-x-4 lg:space-x-8 font-semibold text-2xl">
               <NavLink href="#home">Home</NavLink>
               <NavLink href="#product">Product</NavLink>
-              <NavLink href="#about">About us</NavLink>
+              <NavLink href="#aboutus">About us</NavLink>
               <NavLink href="#team">Team</NavLink>
             </nav>
             <div className="md:hidden">

@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import Benefit from "./components/Benefit";
 import Team from "./components/Team";
 import Navbar from "./components/navbar";
-import AboutUs from "./components/About Us";
+import AboutUs from './components/About Us';
 
 export default function Home() {
   return (

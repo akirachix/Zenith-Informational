@@ -1,9 +1,12 @@
-import Image from "next/image";
+
+import AquaSenseAbout from "./About Us";
 
 export default function Home() {
   return (
     <div className="">
-      <main className="">
+      <main>
+        
+        <AquaSenseAbout/>
         
       </main>
       

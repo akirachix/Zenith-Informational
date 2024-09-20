@@ -43,7 +43,7 @@ const Benefit = () => {
     <p className="text-2xl font-bold text-blue-500">
       Scalable Solution:
     </p>
-    Whether you're managing a single drainage point or a complex network, AquaSense is scalable to meet your needs.
+    Whether you are managing a single drainage point or a complex network, AquaSense is scalable to meet your needs.
   </p>
 </div>
 

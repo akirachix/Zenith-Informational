@@ -1,8 +1,8 @@
+"use client";
 
-"use client"
-import React, { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
+import React, { useState, ReactNode } from 'react';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,11 +11,11 @@ export default function Navbar() {
     <div className="relative font-serif font-bold text-7xl">
       <header className="fixed w-full z-10 bg-white bg-opacity-90 shadow">
         <div className="container max-w-[1800px] mx-auto px-4">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-start xl:gap-80 items-center h-16">
             <div className="flex items-center">
-              <div className="w-45 h-12 relative mr-8 mb-28">
+              <div className="w-45 h-12 relative mr-8 mb-8">
                 <Image
-                  src="/Logo.png"
+                  src="/images/logo.png"
                   alt="Aquasense Logo"
                   width={170}
                   height={48}
@@ -23,10 +23,10 @@ export default function Navbar() {
               </div>
               <div className="hidden sm:block"></div>
             </div>
-            <nav className="hidden md:flex space-x-4 lg:space-x-8 font-semibold text-2xl">
+            <nav className="hidden md:flex ml-64 space-x-4 lg:space-x-8 font-semibold text-2xl">
               <NavLink href="#home">Home</NavLink>
               <NavLink href="#product">Product</NavLink>
-              <NavLink href="#about">About us</NavLink>
+              <NavLink href="#aboutus">About us</NavLink>
               <NavLink href="#team">Team</NavLink>
             </nav>
             <div className="md:hidden">
@@ -46,7 +46,7 @@ export default function Navbar() {
             <div className="text-center">
               <MobileNavLink href="#home" onClick={() => setIsMenuOpen(false)}>Home</MobileNavLink>
               <MobileNavLink href="#product" onClick={() => setIsMenuOpen(false)}>Product</MobileNavLink>
-              <MobileNavLink href="#about" onClick={() => setIsMenuOpen(false)}>About us</MobileNavLink>
+              <MobileNavLink href="#aboutus" onClick={() => setIsMenuOpen(false)}>About us</MobileNavLink>
               <MobileNavLink href="#team" onClick={() => setIsMenuOpen(false)}>Team</MobileNavLink>
             </div>
             <button
@@ -62,21 +62,26 @@ export default function Navbar() {
       </header>
       <div className="pt-16"></div>
     </div>
-  )
+  );
 }
 
-function NavLink({ href, children }) {
-  return (
-    <a href={href} className="text-gray-600 hover:text-blue-500 px-2 py-1 text-2xl font-bold transition duration-150 ease-in-out">
-      {children}
-    </a>
-  )
+interface NavLinkProps {
+  href: string;
+  children: ReactNode;
 }
 
-function MobileNavLink({ href, children, onClick }) {
+function NavLink({ href, children }: NavLinkProps) {
   return (
-    <a href={href} onClick={onClick} className="block px-3 py-4 text-3xl font-bold text-gray-600 hover:text-blue-500">
+    <Link href={href} className="text-gray-600 hover:text-blue-500 px-2 py-1 text-2xl font-bold transition duration-150 ease-in-out">
       {children}
-    </a>
-  )
+    </Link>
+  );
+}
+
+function MobileNavLink({ href, children, onClick }: NavLinkProps & { onClick: () => void }) {
+  return (
+    <Link href={href} onClick={onClick} className="block px-3 py-4 text-3xl font-bold text-gray-600 hover:text-blue-500">
+      {children}
+    </Link>
+  );
 }
